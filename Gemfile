@@ -38,6 +38,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '~> 2.0'
   gem 'byebug'
+  gem 'coveralls', require: false
 end
 
 # Use ActiveModel has_secure_password
