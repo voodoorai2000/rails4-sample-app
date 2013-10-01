@@ -1,5 +1,8 @@
 rvm: 2.0.0
 before_script:
-  - "sh -c 'cp config/database.yml.example config/database.yml'"
-  - "sh -c 'bundle exec rake db:migrate'"
-  - "sh -c 'bundle exec rake db:test:prepare'"
+- sh -c 'cp config/database.yml.example config/database.yml'
+- sh -c 'bundle exec rake db:migrate'
+- sh -c 'bundle exec rake db:test:prepare'
+env:
+  global:
+    secure: ZRrKtjwV/dtfHfJfTHgc2h07rJlwJGsH5aJTEod/vrqWwd8vzw0+Ane2bSu40MGn4N9SP9Kx5vyXtXKYm7l1KpA6WEFLhNsfJ+7FkE72m0y1U6Jf55eBB/3WXeF99ZF/wMdYsVSWn/0RZIA/EIl0fGTJL33rzzABouop6YQ2w1c=

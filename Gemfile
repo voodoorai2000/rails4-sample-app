@@ -43,6 +43,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 2.0'
   gem 'byebug'
   gem 'coveralls', require: false
+  gem 'travis'
 end
 
 
