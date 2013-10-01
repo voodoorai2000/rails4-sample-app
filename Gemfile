@@ -33,6 +33,10 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :production, :staging do
+  gem 'rails_12factor'
+end
+    
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
@@ -40,6 +44,7 @@ group :development, :test do
   gem 'byebug'
   gem 'coveralls', require: false
 end
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
