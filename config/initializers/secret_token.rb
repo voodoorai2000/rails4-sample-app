@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Rails4SampleApp::Application.config.secret_key_base = '269a183c5ef83a03ef09c26ab707095b7205679c1854752b39e866e0b2818cb45178224b4c9c14e826b4e4b8ddad57dcb26db866aaa707f86d46d2aa4e2e4402'
+Rails4SampleApp::Application.config.secret_key_base = ENV['RAILS4_SAMPLE_APP_SECRET_TOKEN']
